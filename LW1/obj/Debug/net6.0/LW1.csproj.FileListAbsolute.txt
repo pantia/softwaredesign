@@ -1,0 +1,14 @@
+C:\Workspace\university\SoftwareDesign\LW1\bin\Debug\net6.0\LW1.exe
+C:\Workspace\university\SoftwareDesign\LW1\bin\Debug\net6.0\LW1.deps.json
+C:\Workspace\university\SoftwareDesign\LW1\bin\Debug\net6.0\LW1.runtimeconfig.json
+C:\Workspace\university\SoftwareDesign\LW1\bin\Debug\net6.0\LW1.dll
+C:\Workspace\university\SoftwareDesign\LW1\bin\Debug\net6.0\LW1.pdb
+C:\Workspace\university\SoftwareDesign\LW1\obj\Debug\net6.0\LW1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\university\SoftwareDesign\LW1\obj\Debug\net6.0\LW1.AssemblyInfoInputs.cache
+C:\Workspace\university\SoftwareDesign\LW1\obj\Debug\net6.0\LW1.AssemblyInfo.cs
+C:\Workspace\university\SoftwareDesign\LW1\obj\Debug\net6.0\LW1.csproj.CoreCompileInputs.cache
+C:\Workspace\university\SoftwareDesign\LW1\obj\Debug\net6.0\LW1.dll
+C:\Workspace\university\SoftwareDesign\LW1\obj\Debug\net6.0\refint\LW1.dll
+C:\Workspace\university\SoftwareDesign\LW1\obj\Debug\net6.0\LW1.pdb
+C:\Workspace\university\SoftwareDesign\LW1\obj\Debug\net6.0\LW1.genruntimeconfig.cache
+C:\Workspace\university\SoftwareDesign\LW1\obj\Debug\net6.0\ref\LW1.dll
