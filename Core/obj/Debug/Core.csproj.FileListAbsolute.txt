@@ -1,0 +1,6 @@
+C:\Workspace\SoftwareDesign\Core\bin\Debug\Core.dll
+C:\Workspace\SoftwareDesign\Core\bin\Debug\Core.pdb
+C:\Workspace\SoftwareDesign\Core\obj\Debug\Core.csproj.AssemblyReference.cache
+C:\Workspace\SoftwareDesign\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+C:\Workspace\SoftwareDesign\Core\obj\Debug\Core.dll
+C:\Workspace\SoftwareDesign\Core\obj\Debug\Core.pdb

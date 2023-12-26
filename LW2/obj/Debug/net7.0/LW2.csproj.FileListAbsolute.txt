@@ -1,0 +1,15 @@
+C:\Workspace\SoftwareDesign\LW2\bin\Debug\net7.0\LW2.exe
+C:\Workspace\SoftwareDesign\LW2\bin\Debug\net7.0\LW2.deps.json
+C:\Workspace\SoftwareDesign\LW2\bin\Debug\net7.0\LW2.runtimeconfig.json
+C:\Workspace\SoftwareDesign\LW2\bin\Debug\net7.0\LW2.dll
+C:\Workspace\SoftwareDesign\LW2\bin\Debug\net7.0\LW2.pdb
+C:\Workspace\SoftwareDesign\LW2\obj\Debug\net7.0\LW2.csproj.AssemblyReference.cache
+C:\Workspace\SoftwareDesign\LW2\obj\Debug\net7.0\LW2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\SoftwareDesign\LW2\obj\Debug\net7.0\LW2.AssemblyInfoInputs.cache
+C:\Workspace\SoftwareDesign\LW2\obj\Debug\net7.0\LW2.AssemblyInfo.cs
+C:\Workspace\SoftwareDesign\LW2\obj\Debug\net7.0\LW2.csproj.CoreCompileInputs.cache
+C:\Workspace\SoftwareDesign\LW2\obj\Debug\net7.0\LW2.dll
+C:\Workspace\SoftwareDesign\LW2\obj\Debug\net7.0\refint\LW2.dll
+C:\Workspace\SoftwareDesign\LW2\obj\Debug\net7.0\LW2.pdb
+C:\Workspace\SoftwareDesign\LW2\obj\Debug\net7.0\LW2.genruntimeconfig.cache
+C:\Workspace\SoftwareDesign\LW2\obj\Debug\net7.0\ref\LW2.dll

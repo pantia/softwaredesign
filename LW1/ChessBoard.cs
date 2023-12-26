@@ -1,9 +1,9 @@
-﻿using System.Drawing; 
+﻿using System.Drawing;
 
 namespace LW1 {
   public class ChessBoard {
 
-    private ChessPiece[][] _pieces; 
+    private ChessPiece[][] _pieces;
 
     public ChessBoard() {
       this._pieces = new ChessPiece[8][];
@@ -26,25 +26,25 @@ namespace LW1 {
       return new Point(y + 1, 8 - x);
     }
 
-    public ChessPiece Get(int x, int y) {  
+    public ChessPiece Get(int x, int y) {
       return this._pieces[x][y];
-    } 
+    }
 
-    public void Add(ChessPiece piece, int x, int y) { 
+    public void Add(ChessPiece piece, int x, int y) {
       Point position = Translate07(x, y);
       if(this._pieces[position.X][position.Y] == null) {
         this._pieces[position.X][position.Y] = piece;
         piece.OnMove(position);
       } else {
         throw new Exception("occupied");
-      } 
-    } 
+      }
+    }
 
     public ChessPiece[] Intersect(ChessPiece piece) {
       return piece.Intersect(this);
     }
 
-    public ChessPiece[] IntersectAttacks(ChessPiece piece) { 
+    public ChessPiece[] IntersectAttacks(ChessPiece piece) {
       return piece.Intersect(this).Where(x => x.Team != piece.Team).ToArray();
     }
 

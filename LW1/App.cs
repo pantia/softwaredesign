@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LW1 {
+﻿namespace LW1 {
   public class App {
 
 
@@ -21,8 +15,8 @@ namespace LW1 {
         return 2;
       }
       if(x >= -4 && x <= 0) {
-        return 0.5*x;
-      } 
+        return 0.5 * x;
+      }
       if(x >= Math.PI) {
         return x - Math.PI;
       }
@@ -30,7 +24,7 @@ namespace LW1 {
         return Math.Sin(x);
       }
       if(x >= -9 && x <= -5) {
-        return Math.Abs(Math.Sqrt(Math.Pow(r,2)-Math.Pow(x+7,2))-2);
+        return Math.Abs(Math.Sqrt(Math.Pow(r, 2) - Math.Pow(x + 7, 2)) - 2);
       }
       return -1;
     }
@@ -42,13 +36,13 @@ namespace LW1 {
       if(x <= 0 && Math.Abs(x) <= r && y <= 0 && Math.Abs(y) <= r) {
         return "hit";
       }
-      if(x <= 0 && Math.Abs(x) <= r && y >= 0 && Math.Abs(y) <= r && y <= -1*Math.Sqrt(Math.Pow(r,2)-Math.Pow(x+r,2))+r) {
+      if(x <= 0 && Math.Abs(x) <= r && y >= 0 && Math.Abs(y) <= r && y <= -1 * Math.Sqrt(Math.Pow(r, 2) - Math.Pow(x + r, 2)) + r) {
         return "hit";
       }
       if(x <= 0 && Math.Abs(x) <= r && y <= 0 && Math.Abs(y) <= r && y >= Math.Sqrt(Math.Pow(r, 2) - Math.Pow(x - r, 2)) - r) {
         return "hit";
       }
-      return "miss"; 
+      return "miss";
     }
 
     private int Factorial(int f) {
@@ -58,13 +52,13 @@ namespace LW1 {
         return f * Factorial(f - 1);
     }
 
-    private string Calculate1dot5(int number) { 
+    private string Calculate1dot5(int number) {
       switch(number) {
         case 6:
           return "six";
-        case 7: 
+        case 7:
           return "seven";
-        case 8: 
+        case 8:
           return "eight";
         case 9:
           return "nine";
@@ -87,23 +81,23 @@ namespace LW1 {
     private string Calculate1dot6(int number) {
       switch(number) {
         case 6:
-        return "six";
+          return "six";
         case 7:
-        return "seven";
+          return "seven";
         case 8:
-        return "eight";
+          return "eight";
         case 9:
-        return "nine";
+          return "nine";
         case 10:
-        return "ten";
+          return "ten";
         case 11:
-        return "jack";
+          return "jack";
         case 12:
-        return "queen";
+          return "queen";
         case 13:
-        return "king";
+          return "king";
         case 14:
-        return "ace";
+          return "ace";
         default: {
           return "undefined";
         }
@@ -123,7 +117,7 @@ namespace LW1 {
       for(int i = 1; i < 6; i++) {
         sum = sum + (Math.Pow(-1, k + 1) * Math.Pow(i, 2 * k - 1)) / (2 * k - 1) * Factorial(k);
       }
-  
+
       return sum;
     }
 
@@ -148,11 +142,11 @@ namespace LW1 {
         Console.WriteLine("Square perimeter: " + CalculateSquarePerimeterByDiagonal(length));
       }
 
-      Console.Write("1.2. Enter 4-digit number: "); 
+      Console.Write("1.2. Enter 4-digit number: ");
       input = Console.ReadLine();
       if(input != null) {
-        int first = int.Parse(input.Substring(0,1));
-        int third = int.Parse(input.Substring(2,1));
+        int first = int.Parse(input.Substring(0, 1));
+        int third = int.Parse(input.Substring(2, 1));
         Console.WriteLine(string.Format("The difference between {0} and {1} is {2}", first, third, first - third));
       }
 
@@ -162,7 +156,7 @@ namespace LW1 {
         int r = int.Parse(input);
         Console.Write("1.3. Enter X: ");
         input = Console.ReadLine();
-        if(input != null) { 
+        if(input != null) {
           int x = int.Parse(input);
           Console.WriteLine("y = " + Calculate1dot3(x, r));
         }
@@ -181,7 +175,7 @@ namespace LW1 {
           if(input != null) {
             int y = int.Parse(input);
             Console.WriteLine(Calculate1dot4(x, y, r));
-          } 
+          }
         }
       }
 
@@ -189,7 +183,7 @@ namespace LW1 {
       input = Console.ReadLine();
       if(input != null) {
         int number = int.Parse(input);
-        Console.WriteLine(Calculate1dot5(number)); 
+        Console.WriteLine(Calculate1dot5(number));
       }
 
       ChessBoard chessBoard = new ChessBoard();
@@ -200,8 +194,8 @@ namespace LW1 {
       Console.Write("1.6. Enter first white castle coordinate (x, y): ");
       input = Console.ReadLine();
       if(input != null) {
-        string[] xy = input.Split(','); 
-        chessBoard.Add(firstCastle, int.Parse(xy[0]), int.Parse(xy[1])); 
+        string[] xy = input.Split(',');
+        chessBoard.Add(firstCastle, int.Parse(xy[0]), int.Parse(xy[1]));
       }
       Console.Write("1.6. Enter second white castle coordinate (x, y): ");
       input = Console.ReadLine();
@@ -263,7 +257,7 @@ namespace LW1 {
         Console.WriteLine(piece.ToString());
       }
 
-  
+
       Console.Write("1.7. Enter x: ");
       input = Console.ReadLine();
       if(input != null) {
@@ -300,7 +294,7 @@ namespace LW1 {
             input = Console.ReadLine();
             if(input != null) {
               int y = int.Parse(input);
-              results.Add(Calculate1dot4(x, y, r)); 
+              results.Add(Calculate1dot4(x, y, r));
             }
           }
           step = step + 1;
@@ -310,7 +304,7 @@ namespace LW1 {
           step = step + 1;
           Console.WriteLine(string.Format("1.10.{0} - {1}", step, result));
         }
-      } 
+      }
     }
 
   }

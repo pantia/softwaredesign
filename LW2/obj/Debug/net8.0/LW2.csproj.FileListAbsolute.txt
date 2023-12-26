@@ -1,0 +1,15 @@
+C:\Workspace\ARTON\university\SoftwareDesign\LW2\bin\Debug\net8.0\LW2.exe
+C:\Workspace\ARTON\university\SoftwareDesign\LW2\bin\Debug\net8.0\LW2.deps.json
+C:\Workspace\ARTON\university\SoftwareDesign\LW2\bin\Debug\net8.0\LW2.runtimeconfig.json
+C:\Workspace\ARTON\university\SoftwareDesign\LW2\bin\Debug\net8.0\LW2.dll
+C:\Workspace\ARTON\university\SoftwareDesign\LW2\bin\Debug\net8.0\LW2.pdb
+C:\Workspace\ARTON\university\SoftwareDesign\LW2\obj\Debug\net8.0\LW2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\ARTON\university\SoftwareDesign\LW2\obj\Debug\net8.0\LW2.AssemblyInfoInputs.cache
+C:\Workspace\ARTON\university\SoftwareDesign\LW2\obj\Debug\net8.0\LW2.AssemblyInfo.cs
+C:\Workspace\ARTON\university\SoftwareDesign\LW2\obj\Debug\net8.0\LW2.csproj.CoreCompileInputs.cache
+C:\Workspace\ARTON\university\SoftwareDesign\LW2\obj\Debug\net8.0\LW2.sourcelink.json
+C:\Workspace\ARTON\university\SoftwareDesign\LW2\obj\Debug\net8.0\LW2.dll
+C:\Workspace\ARTON\university\SoftwareDesign\LW2\obj\Debug\net8.0\refint\LW2.dll
+C:\Workspace\ARTON\university\SoftwareDesign\LW2\obj\Debug\net8.0\LW2.pdb
+C:\Workspace\ARTON\university\SoftwareDesign\LW2\obj\Debug\net8.0\LW2.genruntimeconfig.cache
+C:\Workspace\ARTON\university\SoftwareDesign\LW2\obj\Debug\net8.0\ref\LW2.dll

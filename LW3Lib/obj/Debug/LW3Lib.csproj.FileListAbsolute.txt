@@ -1,0 +1,6 @@
+C:\Workspace\SoftwareDesign\LW3Lib\bin\Debug\LW3Lib.dll
+C:\Workspace\SoftwareDesign\LW3Lib\bin\Debug\LW3Lib.pdb
+C:\Workspace\SoftwareDesign\LW3Lib\obj\Debug\LW3Lib.csproj.AssemblyReference.cache
+C:\Workspace\SoftwareDesign\LW3Lib\obj\Debug\LW3Lib.csproj.CoreCompileInputs.cache
+C:\Workspace\SoftwareDesign\LW3Lib\obj\Debug\LW3Lib.dll
+C:\Workspace\SoftwareDesign\LW3Lib\obj\Debug\LW3Lib.pdb

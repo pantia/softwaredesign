@@ -7,7 +7,7 @@ namespace LW1 {
 
     public override ChessPiece[] Intersect(ChessBoard board) {
 
-      List<ChessPiece> list = new List<ChessPiece>(); 
+      List<ChessPiece> list = new List<ChessPiece>();
       ChessPiece? piece = null;
       int x = this._position.X;
       int y = this._position.Y;
@@ -55,8 +55,8 @@ namespace LW1 {
         if(piece != null) {
           list.Add(piece);
         }
-      } 
-  
+      }
+
       return list.ToArray();
     }
 
