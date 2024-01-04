@@ -9,8 +9,12 @@
     <StackPanel Margin="5">
         <TextBox Text="{Binding Input1, UpdateSourceTrigger=PropertyChanged}"/>
         <TextBox Margin="0,5,0,0" Text="{Binding Input2, UpdateSourceTrigger=PropertyChanged}"/>
-        <StackPanel Orientation="Horizontal">
-            
+        <StackPanel Orientation="Horizontal" Margin="0,5,0,0" >
+            <Button Content="Перетин" Command="{Binding IntersectCommand}"/>
+            <Button Margin="5,0,0,0" Content="Об'єднання" Command="{Binding UnionCommand}"/>
+            <Button Margin="5,0,0,0" Content="Різниця" Command="{Binding ExceptCommand}"/>
+            <Button Margin="5,0,0,0" Content="Симетрична різниця" Command="{Binding SymmetricExceptCommand}"/>
         </StackPanel>
+        <TextBlock Text="{Binding Output, UpdateSourceTrigger=PropertyChanged}"/>
     </StackPanel>
 </Window>

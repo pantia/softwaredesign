@@ -25,3 +25,5 @@ C:\Workspace\SoftwareDesign\LW8\obj\Debug\View\AddConstructionView.g.cs
 C:\Workspace\SoftwareDesign\LW8\obj\Debug\View\AddConstructionView.baml
 C:\Workspace\SoftwareDesign\LW8\obj\Debug\View\Task3View.g.cs
 C:\Workspace\SoftwareDesign\LW8\obj\Debug\View\Task3View.baml
+C:\Workspace\SoftwareDesign\LW8\obj\Debug\View\Task4View.g.cs
+C:\Workspace\SoftwareDesign\LW8\obj\Debug\View\Task4View.baml

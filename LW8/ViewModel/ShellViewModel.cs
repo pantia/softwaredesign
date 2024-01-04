@@ -23,6 +23,11 @@ namespace LW7.ViewModel {
       get => this._task2Command;
     }
 
+    private ICommand _task4Command;
+    public ICommand Task4Command {
+      get => this._task4Command;
+    }
+
     private ICommand _task3Command;
     public ICommand Task3Command {
       get => this._task3Command;
@@ -87,6 +92,11 @@ namespace LW7.ViewModel {
       this._task3Command = new RelayCommand((a) => {
         Task3View view = new Task3View();
         view.DataContext = new Task3ViewModel();
+        view.ShowDialog();
+      }, p => true);
+      this._task4Command = new RelayCommand((a) => {
+        Task4View view = new Task4View();
+        view.DataContext = new Task4ViewModel();
         view.ShowDialog();
       }, p => true);
     }

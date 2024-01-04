@@ -1,0 +1,40 @@
+﻿<Window x:Class="LW8.View.Task4View"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LW8.View"
+        mc:Ignorable="d"
+        Title="Завдання 4" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <StackPanel Orientation="Vertical">
+        <TextBlock >
+            <Run Text="Кількість:"/>
+            <Run Text="{Binding Count, Mode=OneWay}"/>
+        </TextBlock>
+        <StackPanel Orientation="Horizontal" Margin="5">
+            <TextBlock Text="Ключ" VerticalAlignment="Center"/>
+            <TextBox Margin="5,0,0,0" Text="{Binding InputKey, UpdateSourceTrigger=PropertyChanged}" Width="100"/>
+            <TextBlock Margin="5,0,0,0" Text="Значення" VerticalAlignment="Center"/>
+            <TextBox Margin="5,0,0,0" Text="{Binding InputValue, UpdateSourceTrigger=PropertyChanged}" Width="100"/>
+            <Button Margin="5,0,0,0" Content="Додати" Command="{Binding AddCommand}"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="5">
+            <TextBlock Text="Ключ" VerticalAlignment="Center"/>
+            <TextBox Margin="5,0,0,0" Text="{Binding DeleteKey, UpdateSourceTrigger=PropertyChanged}" Width="100"/> 
+            <Button Margin="5,0,0,0" Content="Видалити" Command="{Binding DeleteCommand}"/>
+        </StackPanel>
+        <Button Content="Очистити" Command="{Binding ClearCommand}" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+        <StackPanel Orientation="Horizontal" Margin="5">
+            <TextBlock Text="Ключ" VerticalAlignment="Center"/>
+            <TextBox Margin="5,0,0,0" Text="{Binding CheckKey, UpdateSourceTrigger=PropertyChanged}" Width="100"/>
+            <Button Margin="5,0,0,0" Content="Перевірити наявність" Command="{Binding CheckKeyCommand}"/>
+            <TextBlock Text="{Binding CheckKeyOutput, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="5">
+            <TextBlock Text="Значення" VerticalAlignment="Center"/>
+            <TextBox Margin="5,0,0,0" Text="{Binding CheckValue, UpdateSourceTrigger=PropertyChanged}" Width="100"/>
+            <Button Margin="5,0,0,0" Content="Перевірити наявність" Command="{Binding CheckValueCommand}"/>
+            <TextBlock Text="{Binding CheckValueOutput, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

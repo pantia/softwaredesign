@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{77682489-0DC8-4910-A008-D20845DA93A8}</ProjectGuid>
+    <ProjectGuid>{D15C9764-2DAE-454D-8DF6-34DB672BDCF3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>LW8</RootNamespace>
-    <AssemblyName>LW8</AssemblyName>
+    <RootNamespace>LW9</RootNamespace>
+    <AssemblyName>LW9</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,65 +55,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ConstructionService.cs" />
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Construction.cs" />
-    <Compile Include="Model\ConstructionState.cs" />
-    <Compile Include="ShopService.cs" />
-    <Compile Include="ViewModel\AddConstructionViewModel.cs" />
-    <Compile Include="ViewModel\AddViewModel.cs" />
-    <Compile Include="ViewModel\ShellViewModel.cs" />
-    <Compile Include="ViewModel\Task2ViewModel.cs" />
-    <Compile Include="ViewModel\Task3ViewModel.cs" />
-    <Compile Include="ViewModel\Task4ViewModel.cs" />
-    <Compile Include="View\AddConstructionView.xaml.cs">
-      <DependentUpon>AddConstructionView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\AddView.xaml.cs">
-      <DependentUpon>AddView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="View\Task2View.xaml.cs">
-      <DependentUpon>Task2View.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\Task3View.xaml.cs">
-      <DependentUpon>Task3View.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\Task4View.xaml.cs">
-      <DependentUpon>Task4View.xaml</DependentUpon>
-    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="View\AddConstructionView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\AddView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\Task2View.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\Task3View.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\Task4View.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Offense.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -138,12 +93,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Core\Core.csproj">
-      <Project>{49a96877-5d44-45cc-86a1-3c3b5c18bda7}</Project>
-      <Name>Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
