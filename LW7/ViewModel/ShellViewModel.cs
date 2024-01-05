@@ -10,14 +10,16 @@ namespace LW7.ViewModel {
     private ShopService _service;
 
 
-    private ICommand _addCommand;
-    public ICommand AddCommand {
-      get => this._addCommand;
-    }
+  
 
     private ICommand _task2Command;
     public ICommand Task2Command {
       get => this._task2Command;
+    }
+
+    private ICommand _addCommand;
+    public ICommand AddCommand {
+      get => this._addCommand;
     }
 
     private ICommand _sortCommand;
@@ -49,16 +51,17 @@ namespace LW7.ViewModel {
     public ShellViewModel() {
       
       this._service = new ShopService();
-      this._addCommand = new RelayCommand((a) => { 
-        AddView view = new AddView();
-        view.DataContext = new AddViewModel(this._service);
-        view.ShowDialog();
-        Print();
-      }, p => true);
+      
       this._task2Command = new RelayCommand((a) => {
         Task2View view = new Task2View();
         view.DataContext = new Task2ViewModel();
         view.ShowDialog();
+      }, p => true);
+      this._addCommand = new RelayCommand((a) => {
+        AddView view = new AddView();
+        view.DataContext = new AddViewModel(this._service);
+        view.ShowDialog();
+        Print();
       }, p => true);
       this._sortCommand = new RelayCommand((a) => {
         _service.Sort(); 

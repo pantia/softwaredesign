@@ -6,18 +6,40 @@
         xmlns:local="clr-namespace:LW11"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel Orientation="Vertical" Margin="5">
-        <StackPanel Orientation="Horizontal">
-            <TextBlock Text="X"/>
-            <TextBox Margin="5,0,0,0" Width="100" Text="{Binding X, UpdateSourceTrigger=PropertyChanged}"/>
-        </StackPanel>
-        <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
-            <TextBlock Text="Y"/>
-            <TextBox Margin="5,0,0,0" Width="100" Text="{Binding Y, UpdateSourceTrigger=PropertyChanged}"/>
-        </StackPanel>
+    
+    <DockPanel>
+        <StackPanel Orientation="Vertical" Margin="5" DockPanel.Dock="Top">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="X"/>
+                <TextBox Margin="5,0,0,0" Width="100" Text="{Binding X, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                <TextBlock Text="Y"/>
+                <TextBox Margin="5,0,0,0" Width="100" Text="{Binding Y, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
 
-        <TextBlock Text="F = f1 + f2; f1 => a + b; f2 => a * b;"/>
-        <Button Command="{Binding CalculateCommand}" Margin="0,5,0,0" Content="Обчислити" HorizontalAlignment="Left"/>
-        <TextBlock Margin="0,5,0,0" Text="{Binding Output, UpdateSourceTrigger=PropertyChanged}"/>
-    </StackPanel>
+            <TextBlock Text="F = f1 + f2; f1 => a + b; f2 => a * b;"/>
+            <Button Command="{Binding CalculateCommand}" Margin="0,5,0,0" Content="Обчислити" HorizontalAlignment="Left"/>
+            <TextBlock Margin="0,5,0,0" Text="{Binding Output, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock Text="Завдання 3"/>
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="5,0,0,0" Command="{Binding AddCommand}" Content="Додати"/>
+                <Button Margin="5,0,0,0" Command="{Binding CalculateTotalPriceCommand}" Content="Обчислити загальну ціну"/>
+                <Button Margin="5,0,0,0" Command="{Binding CalculateMidPriceCommand}" Content="Обчислити середню ціну"/>
+            </StackPanel>
+            <TextBlock Text="{Binding Output2, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+        <ListView Margin="0,5,0,0" ItemsSource="{Binding Shop}">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="Назва" DisplayMemberBinding="{Binding Name}"/>
+                        <GridViewColumn Header="Тип" DisplayMemberBinding="{Binding Type}"/>
+                        <GridViewColumn Header="Кількість" DisplayMemberBinding="{Binding Quantity}"/>
+                        <GridViewColumn Header="Ціна" DisplayMemberBinding="{Binding Cost}"/>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </DockPanel>
 </Window>

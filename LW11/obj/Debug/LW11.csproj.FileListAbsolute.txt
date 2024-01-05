@@ -17,3 +17,7 @@ C:\Workspace\SoftwareDesign\LW11\obj\Debug\LW11.pdb
 C:\Workspace\SoftwareDesign\LW11\bin\Debug\Core.dll
 C:\Workspace\SoftwareDesign\LW11\bin\Debug\Core.pdb
 C:\Workspace\SoftwareDesign\LW11\obj\Debug\LW11.csproj.CopyComplete
+C:\Workspace\SoftwareDesign\LW11\bin\Debug\Newtonsoft.Json.dll
+C:\Workspace\SoftwareDesign\LW11\bin\Debug\Newtonsoft.Json.xml
+C:\Workspace\SoftwareDesign\LW11\obj\Debug\View\AddView.g.cs
+C:\Workspace\SoftwareDesign\LW11\obj\Debug\View\AddView.baml
