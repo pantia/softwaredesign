@@ -6,7 +6,30 @@
         xmlns:local="clr-namespace:LW10"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <StackPanel Orientation="Vertical" Margin="5">
+        <TextBlock Text="Завдання 1"/>
+        <TextBox Text="{Binding Input,UpdateSourceTrigger=PropertyChanged}"/>
+        <Button Margin="0,5,0,0" Content="Перевірити збалансованість" Command="{Binding CheckCommand}" HorizontalAlignment="Left"/>
+        <TextBlock Margin="0,5,0,0" Text="{Binding Output, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Text="Завдання 4 (15)"/>
+        <TextBlock Text="Матриця суміжності"/>
+        <ItemsControl ItemsSource="{Binding Matrix}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="5" Rows="5"/> 
+                </ItemsPanelTemplate> 
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+        <TextBlock Text="Матриця інцидентності"/>
+        <TextBlock Text="X - aa,ab,ae,be,ce,de,dd (список ребер)"/>
+        <TextBlock Text="Y - a,b,c,d,e"/>
+        <ItemsControl ItemsSource="{Binding Matrix2}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="7" Rows="5"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+    </StackPanel>
+  
 </Window>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LW10.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,7 @@ namespace LW10 {
   public partial class MainWindow : Window {
     public MainWindow() {
       InitializeComponent();
+      this.DataContext = new ShellViewModel();
     }
   }
 }
