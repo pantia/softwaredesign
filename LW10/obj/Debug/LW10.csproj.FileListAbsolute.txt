@@ -1,0 +1,16 @@
+C:\Workspace\SoftwareDesign\LW10\bin\Debug\LW10.exe.config
+C:\Workspace\SoftwareDesign\LW10\bin\Debug\LW10.exe
+C:\Workspace\SoftwareDesign\LW10\bin\Debug\LW10.pdb
+C:\Workspace\SoftwareDesign\LW10\obj\Debug\LW10.csproj.AssemblyReference.cache
+C:\Workspace\SoftwareDesign\LW10\obj\Debug\LW10.csproj.SuggestedBindingRedirects.cache
+C:\Workspace\SoftwareDesign\LW10\obj\Debug\MainWindow.g.cs
+C:\Workspace\SoftwareDesign\LW10\obj\Debug\App.g.cs
+C:\Workspace\SoftwareDesign\LW10\obj\Debug\LW10_MarkupCompile.cache
+C:\Workspace\SoftwareDesign\LW10\obj\Debug\LW10_MarkupCompile.lref
+C:\Workspace\SoftwareDesign\LW10\obj\Debug\MainWindow.baml
+C:\Workspace\SoftwareDesign\LW10\obj\Debug\LW10.g.resources
+C:\Workspace\SoftwareDesign\LW10\obj\Debug\LW10.Properties.Resources.resources
+C:\Workspace\SoftwareDesign\LW10\obj\Debug\LW10.csproj.GenerateResource.cache
+C:\Workspace\SoftwareDesign\LW10\obj\Debug\LW10.csproj.CoreCompileInputs.cache
+C:\Workspace\SoftwareDesign\LW10\obj\Debug\LW10.exe
+C:\Workspace\SoftwareDesign\LW10\obj\Debug\LW10.pdb

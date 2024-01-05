@@ -6,7 +6,84 @@
         xmlns:local="clr-namespace:LW9"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top">
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="5" Content="Завдання 2" HorizontalAlignment="Left" Command="{Binding Task2Command}"/>
+                <Button Margin="5" Content="Завдання 3" HorizontalAlignment="Left" Command="{Binding Task3Command}"/>
+            </StackPanel>
+            <RadioButton GroupName="A" IsChecked="{Binding SingleChecked, UpdateSourceTrigger=PropertyChanged}" Content="Однозв'язний список"/>
+            <RadioButton GroupName="A" IsChecked="{Binding DoublyChecked, UpdateSourceTrigger=PropertyChanged}" Content="Двухзв'язний список"/>
+            <GroupBox Header="Вставка">
+                <DockPanel>
+                    <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
+                        <StackPanel.Resources>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Margin" Value="5,0,0,0"/>
+                            </Style>
+                        </StackPanel.Resources>
+                        <Button Content="На початок" Command="{Binding AddFirstCommand}"/>
+                        <Button Content="В кінець" Command="{Binding AddLastCommand}"/>
+                        <Button Content="На позицію" Command="{Binding InsertCommand}"/>
+                        <TextBox Margin="5,0,0,0" Width="50" Text="{Binding Index, UpdateSourceTrigger=PropertyChanged}"/>
+                    </StackPanel>
+                    <TextBox Text="{Binding Input, UpdateSourceTrigger=PropertyChanged}"/>
+                </DockPanel>
+            </GroupBox>
+            <GroupBox Header="Видалення">
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
+                    <StackPanel.Resources>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Margin" Value="5,0,0,0"/>
+                        </Style>
+                    </StackPanel.Resources>
+                    <Button Content="Видалити всі" Command="{Binding ClearCommand}"/>
+                    <Button Content="Видалити за індексом" Command="{Binding DeleteByIndexCommand}"/>
+                    <TextBox Margin="5,0,0,0" Width="50" Text="{Binding Index, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Button Content="Видалити за значенням" Command="{Binding DeleteByValueCommand}"/>
+                    <TextBox Margin="5,0,0,0" Width="50" Text="{Binding Input, UpdateSourceTrigger=PropertyChanged}"/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Редагування">
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
+                    <StackPanel.Resources>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Margin" Value="5,0,0,0"/>
+                        </Style>
+                    </StackPanel.Resources>
+                    <TextBox Margin="5,0,0,0" Width="50" Text="{Binding Input, UpdateSourceTrigger=PropertyChanged}"/>
+                    <TextBox Margin="5,0,0,0" Width="50" Text="{Binding Replace, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Button Content="Замінити" Command="{Binding ReplaceCommand}"/>
+                    <TextBox Margin="5,0,0,0" Width="50" Text="{Binding Index, UpdateSourceTrigger=PropertyChanged}"/>
+                    <TextBox Margin="5,0,0,0" Width="50" Text="{Binding Input, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Button Content="Змінити за індексом" Command="{Binding ChangeByIndexCommand}"/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Пошук">
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
+                    <StackPanel.Resources>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Margin" Value="5,0,0,0"/>
+                        </Style>
+                    </StackPanel.Resources>
+
+                    <TextBox Margin="5,0,0,0" Width="50" Text="{Binding Input, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Button Content="Пошук" Command="{Binding SearchCommand}"/>
+                    <TextBlock Margin="5,0,0,0" Text="{Binding SearchOutput,UpdateSourceTrigger=PropertyChanged}"/>
+                </StackPanel>
+            </GroupBox>
+
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="5,0,0,0" Content="Сортувати" HorizontalAlignment="Left" Command="{Binding SortCommand}"/>
+
+            </StackPanel>
+            <TextBlock>
+                            <Run Text="Кількість"/>
+                            <Run Text="{Binding Count, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"/>
+            </TextBlock>
+        </StackPanel>
+
+        <ListView ItemsSource="{Binding Items}"/>
+    </DockPanel>
 </Window>
