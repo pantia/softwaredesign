@@ -14,3 +14,6 @@ C:\Workspace\SoftwareDesign\LW11\obj\Debug\LW11.csproj.GenerateResource.cache
 C:\Workspace\SoftwareDesign\LW11\obj\Debug\LW11.csproj.CoreCompileInputs.cache
 C:\Workspace\SoftwareDesign\LW11\obj\Debug\LW11.exe
 C:\Workspace\SoftwareDesign\LW11\obj\Debug\LW11.pdb
+C:\Workspace\SoftwareDesign\LW11\bin\Debug\Core.dll
+C:\Workspace\SoftwareDesign\LW11\bin\Debug\Core.pdb
+C:\Workspace\SoftwareDesign\LW11\obj\Debug\LW11.csproj.CopyComplete
