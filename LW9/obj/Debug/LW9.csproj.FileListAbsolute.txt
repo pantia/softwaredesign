@@ -21,3 +21,8 @@ C:\Workspace\SoftwareDesign\LW9\obj\Debug\View\Task2View.g.cs
 C:\Workspace\SoftwareDesign\LW9\obj\Debug\View\Task2View.baml
 C:\Workspace\SoftwareDesign\LW9\obj\Debug\View\Task3View.g.cs
 C:\Workspace\SoftwareDesign\LW9\obj\Debug\View\Task3View.baml
+C:\Workspace\SoftwareDesign\LW9\bin\Debug\LW7.exe
+C:\Workspace\SoftwareDesign\LW9\bin\Debug\Newtonsoft.Json.dll
+C:\Workspace\SoftwareDesign\LW9\bin\Debug\LW7.pdb
+C:\Workspace\SoftwareDesign\LW9\bin\Debug\LW7.exe.config
+C:\Workspace\SoftwareDesign\LW9\bin\Debug\Newtonsoft.Json.xml

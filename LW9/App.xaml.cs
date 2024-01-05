@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LW9.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -11,5 +12,10 @@ namespace LW9 {
   /// Interaction logic for App.xaml
   /// </summary>
   public partial class App : Application {
+    public App() {
+      new Task4ViewModel();
+    }
+
+
   }
 }
